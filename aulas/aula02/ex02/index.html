@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        color: red;
+      }
+
+      div {
+        width: 200px;
+        height: 100px;
+        background: blue;
+        margin-bottom: 100px;
+      }
+
+      #preta {
+        background: black;
+      }
+  </style>
+</head>
+<body>
+  <h1>Hello</h1>
+
+  <h2>Pelo o amor de deus, não aperte várias vezes esse aqui.</h2>
+  <div id="azul"></div>
+  <h2>Esse aqui pode.</h2>
+  <div id="preta"></div>
+</body>
+
+<script>
+  const caixaPreta = document.querySelector('#preta'),
+        caixaAzul = document.querySelector('#azul');
+  let tamanho = 200;
+  let diminuindo = true;
+
+  caixaPreta.addEventListener("click", () => {
+    caixaPreta.style.width = `${tamanho}px`;
+    if(tamanho == 10)
+      diminuindo = false;
+    if(tamanho == 200)
+      diminuindo = true;
+
+    diminuindo ? tamanho -= 10 : tamanho +=10;
+  })
+
+  caixaAzul.addEventListener('click', () => {
+    setInterval(()=> {
+      caixaAzul.style.background = `rgb(${geraNumeroAleatorio()},${geraNumeroAleatorio()},${geraNumeroAleatorio()})`;
+    },100);
+  })
+
+  function geraNumeroAleatorio() {
+    return Math.floor(Math.random()* 255);
+  }
+</script>
+
+</html>

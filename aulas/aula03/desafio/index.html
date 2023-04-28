@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .linha {
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+
+    .quadrado {
+      width: 200px;
+      height: 200px;
+      background: black;
+    }
+
+    .l1 {
+      justify-content: space-between;
+    }
+
+    .l2 {
+      justify-content: center;
+    }
+
+    .l3{
+      justify-content: space-between;
+      align-items: end;
+    }
+
+    .q1 {
+      background-color: blue;
+    }
+    .q2 {
+      background-color: rgb(47, 255, 203);
+    }
+    .q3 {
+      background-color: green;
+    }
+    .q4 {
+      background-color: red;
+    }
+    .q5{
+      background-color: rgb(100, 27, 107);
+    }
+  </style>
+</head>
+<body>
+  <div class="linha l1">
+    <div class="quadrado q1"></div>
+    <div class="quadrado q2"></div>
+  </div>
+  <div class="linha l2">
+    <div class="quadrado q3"></div>
+  </div>
+  <div class="linha l3">
+    <div class="quadrado q4"></div>
+    <div class="quadrado q5"></div>
+  </div>
+</body>
+</html>

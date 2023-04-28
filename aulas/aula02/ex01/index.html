@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background:rgba(20, 70, 92, 0.658);
+    }
+    form {
+      margin: 20vh auto;
+      width: 300px;
+      padding: 50px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.158);
+      position: relative;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+      margin-bottom: 5px;
+    }
+    span {
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 41%;
+      border-radius: 50%;
+      background: #00000049;
+      padding: 5px;
+    }
+    pre {
+      background: #fff;
+      border: 1px solid #000;
+      width: 40vw;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#code"> ir para o código</a>
+  <form action="#" onsubmit>
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" tabindex="1">
+    </div>
+    <div>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" tabindex="3">
+    </div>
+    <span id="btn-senha">👀</span>
+    <div>
+      <label for="genero">Gênero:</label>
+      <input type="text" id="genero" tabindex="2">
+    </div>
+  </form>
+
+  <table>
+    <caption>Tabela</caption>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Breno</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Outro</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Função usada para senha: </h2>
+  <code id="code">
+    <pre>
+      const senha = document.querySelector('#senha');
+      const senha_btn = document.querySelector('#btn-senha');
+      senha_btn.addEventListener("click", () => {
+        if(senha.type == 'text') {
+          senha.type = 'password';
+          senha_btn.innerText = '👀';
+        }
+      
+        else{
+          senha.type = 'text';
+          senha_btn.innerText = '⛔';
+        }
+      })
+    </pre>
+  </code>
+</body>
+<script>
+  const senha = document.querySelector('#senha');
+  const senha_btn = document.querySelector('#btn-senha');
+
+  senha_btn.addEventListener("click", () => {
+    if(senha.type == 'text') {
+      senha.type = 'password';
+      senha_btn.innerText = '👀';
+    }
+      
+    else{
+      senha.type = 'text';
+      senha_btn.innerText = '⛔';
+    }
+  })
+
+</script>
+</html>

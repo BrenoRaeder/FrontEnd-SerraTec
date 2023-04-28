@@ -1,0 +1,48 @@
+body {
+  background: #141104;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 25vw;
+  box-shadow: 5px 0px 10px #000;
+  margin-left: 38vw;
+}
+
+div {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  width: 50vw;
+  margin: 15px auto;
+  padding: 15px;
+  text-align: left;
+  background: rgba(0,0,0,0.4);
+  animation: animacaoInformacoes 0.8s ease-out;
+}
+
+li {
+  list-style: none;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+}
+
+@keyframes animacaoInformacoes {
+  0% {margin-left: 0;}
+  25% {margin-left: 5vw;}
+  50% {margin-left: 10vw;}
+  75% {margin-left: 15vw;}
+  100% {margin: auto;}
+}

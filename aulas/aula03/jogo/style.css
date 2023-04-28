@@ -1,0 +1,26 @@
+body {
+  background: black;
+}
+
+.jogo-container {
+  border: 3px dashed black;
+  width: 80vw;
+  height: 70vh;
+  margin: auto auto;
+  background: #fff;
+}
+
+.jogo {
+  width: 80vw;
+  height: 70vh;
+  position: relative;
+}
+
+.p1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 50px;
+  background: rgb(56, 56, 133);
+}
