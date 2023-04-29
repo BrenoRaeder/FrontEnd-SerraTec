@@ -3,11 +3,10 @@ body {
 }
 
 .jogo-container {
-  border: 3px dashed black;
+  border: 3px dashed #fff;
   width: 80vw;
   height: 70vh;
   margin: auto auto;
-  background: #fff;
 }
 
 .jogo {
@@ -21,8 +20,17 @@ body {
   bottom: 0;
   left: 0;
   width: 20px;
-  height: 20px;
-  background: rgb(56, 56, 133);
+  height: 60px;
+  background: #fff;
+}
+
+.p2 {
+  position: absolute;
+  bottom: 0px;
+  left: 1015px;
+  width: 20px;
+  height: 60px;
+  background: #fff;
 }
 
 .o1 {
@@ -32,5 +40,13 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background:rgb(133, 56, 75);
+  background:#fff;
+}
+
+.placar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
 }
